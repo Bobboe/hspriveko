@@ -63,7 +63,8 @@
   color: var(--text);
   border-radius: 12px;
   padding: 10px 12px;
-  font-size: 14px;
+  /* iOS Safari zooms the page on focus if inputs are < 16px */
+  font-size: 16px;
 }
 
 .label {
@@ -113,6 +114,7 @@
   left: 0;
   right: 0;
   bottom: 0;
+  z-index: 20;
   padding-bottom: env(safe-area-inset-bottom);
   background: color-mix(in srgb, var(--bg) 70%, black);
   border-top: 1px solid color-mix(in srgb, var(--border) 70%, black);
@@ -151,10 +153,13 @@
   inset: 0;
   background: rgba(0, 0, 0, 0.62);
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
   padding: 12px;
+  padding-top: calc(12px + env(safe-area-inset-top));
   padding-bottom: calc(12px + env(safe-area-inset-bottom));
+  z-index: 1000; /* always above bottom nav */
+  overflow: auto; /* when keyboard is open / small screens */
 }
 
 .modalSheet {
@@ -164,6 +169,8 @@
   background: color-mix(in srgb, var(--surface) 92%, black);
   box-shadow: var(--shadow);
   padding: 14px;
+  max-height: calc(100dvh - 24px - env(safe-area-inset-top) - env(safe-area-inset-bottom));
+  overflow: auto;
 }
 
 .notice {

@@ -10,6 +10,7 @@ body {
   background: radial-gradient(1200px 900px at 30% 0%, #0f1a14 0%, var(--bg) 50%)
     fixed;
   color: var(--text);
+  -webkit-text-size-adjust: 100%;
 }
 
 * {
