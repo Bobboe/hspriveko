@@ -19,9 +19,9 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['icons/icon.svg', 'icons/apple-touch-icon.svg'],
       manifest: {
-        name: 'Privat ekonomi',
-        short_name: 'Budget',
-        description: 'Privat ekonomi med budget per kategori (lokalt på enheten).',
+        name: 'HS Ekonomi',
+        short_name: 'HS Ekonomi',
+        description: 'HS Ekonomi – privat ekonomi med budget per kategori (lokalt på enheten).',
         theme_color: '#0f1a14',
         background_color: '#0b0f0d',
         display: 'standalone',

@@ -1,23 +1,70 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="180" height="180" viewBox="0 0 512 512">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0b0f0d"/>
-      <stop offset="1" stop-color="#121a16"/>
+      <stop offset="0" stop-color="#0b0f0d" />
+      <stop offset="1" stop-color="#121a16" />
     </linearGradient>
     <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#2b7a4b"/>
-      <stop offset="1" stop-color="#1f5f3c"/>
+      <stop offset="0" stop-color="#2b7a4b" />
+      <stop offset="1" stop-color="#1f5f3c" />
+    </linearGradient>
+    <linearGradient id="accentSoft" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2b7a4b" stop-opacity="0.9" />
+      <stop offset="1" stop-color="#1f5f3c" stop-opacity="0.6" />
     </linearGradient>
   </defs>
-  <rect x="32" y="32" width="448" height="448" rx="96" fill="url(#bg)"/>
-  <path
-    d="M168 168h176c22.1 0 40 17.9 40 40v120c0 22.1-17.9 40-40 40H168c-22.1 0-40-17.9-40-40V208c0-22.1 17.9-40 40-40z"
-    fill="#1a2420"
-  />
-  <path d="M184 224h144v24H184z" fill="#cfe7d9" opacity="0.9"/>
-  <path d="M184 272h108v24H184z" fill="#cfe7d9" opacity="0.9"/>
-  <path d="M184 320h144v24H184z" fill="#cfe7d9" opacity="0.9"/>
-  <path d="M184 320h88v24H184z" fill="url(#accent)"/>
+
+  <rect x="32" y="32" width="448" height="448" rx="96" fill="url(#bg)" />
+  <rect x="56" y="56" width="400" height="400" rx="84" fill="#0f1512" opacity="0.85" />
+
+  <!-- Slightly larger text for iOS icon -->
+  <g text-anchor="middle">
+    <text
+      x="256"
+      y="186"
+      font-size="98"
+      font-weight="800"
+      letter-spacing="2"
+      fill="#e7f0ea"
+      font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial"
+    >
+      HS
+    </text>
+    <text
+      x="256"
+      y="232"
+      font-size="26"
+      font-weight="800"
+      letter-spacing="6"
+      fill="#a8b8af"
+      font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial"
+    >
+      EKONOMI
+    </text>
+  </g>
+
+  <!-- Symbol: compact chart -->
+  <g>
+    <rect x="156" y="300" width="40" height="90" rx="12" fill="#1a2420" />
+    <rect x="216" y="270" width="40" height="120" rx="12" fill="#1a2420" />
+    <rect x="276" y="244" width="40" height="146" rx="12" fill="#1a2420" />
+    <rect x="336" y="220" width="40" height="170" rx="12" fill="#1a2420" />
+
+    <rect x="156" y="332" width="40" height="58" rx="12" fill="url(#accentSoft)" />
+    <rect x="216" y="308" width="40" height="82" rx="12" fill="url(#accentSoft)" />
+    <rect x="276" y="280" width="40" height="110" rx="12" fill="url(#accentSoft)" />
+    <rect x="336" y="250" width="40" height="140" rx="12" fill="url(#accentSoft)" />
+
+    <path
+      d="M162 290 C208 260, 236 274, 270 250 C304 226, 334 236, 364 206"
+      fill="none"
+      stroke="url(#accent)"
+      stroke-width="14"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+    <path d="M364 206 L348 206 L364 190 L380 206 Z" fill="url(#accent)" />
+  </g>
 </svg>
 
 

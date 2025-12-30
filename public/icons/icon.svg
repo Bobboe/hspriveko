@@ -1,22 +1,74 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0b0f0d"/>
-      <stop offset="1" stop-color="#121a16"/>
+      <stop offset="0" stop-color="#0b0f0d" />
+      <stop offset="1" stop-color="#121a16" />
     </linearGradient>
     <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#2b7a4b"/>
-      <stop offset="1" stop-color="#1f5f3c"/>
+      <stop offset="0" stop-color="#2b7a4b" />
+      <stop offset="1" stop-color="#1f5f3c" />
+    </linearGradient>
+    <linearGradient id="accentSoft" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2b7a4b" stop-opacity="0.9" />
+      <stop offset="1" stop-color="#1f5f3c" stop-opacity="0.6" />
     </linearGradient>
   </defs>
-  <rect x="32" y="32" width="448" height="448" rx="96" fill="url(#bg)"/>
-  <rect x="96" y="128" width="320" height="56" rx="28" fill="#1a2420"/>
-  <rect x="96" y="214" width="250" height="56" rx="28" fill="#1a2420"/>
-  <rect x="96" y="300" width="320" height="56" rx="28" fill="#1a2420"/>
-  <rect x="96" y="300" width="196" height="56" rx="28" fill="url(#accent)"/>
-  <circle cx="372" cy="242" r="34" fill="url(#accent)"/>
-  <path d="M356 238h32v8h-32z" fill="#0b0f0d"/>
-  <path d="M372 222v32h-8v-32z" fill="#0b0f0d"/>
+
+  <!-- Background -->
+  <rect x="32" y="32" width="448" height="448" rx="96" fill="url(#bg)" />
+  <rect x="56" y="56" width="400" height="400" rx="84" fill="#0f1512" opacity="0.85" />
+
+  <!-- Symbol: bar chart + upward line -->
+  <g transform="translate(0,0)">
+    <rect x="132" y="286" width="44" height="92" rx="12" fill="#1a2420" />
+    <rect x="204" y="254" width="44" height="124" rx="12" fill="#1a2420" />
+    <rect x="276" y="224" width="44" height="154" rx="12" fill="#1a2420" />
+    <rect x="348" y="196" width="44" height="182" rx="12" fill="#1a2420" />
+
+    <rect x="132" y="318" width="44" height="60" rx="12" fill="url(#accentSoft)" />
+    <rect x="204" y="292" width="44" height="86" rx="12" fill="url(#accentSoft)" />
+    <rect x="276" y="258" width="44" height="120" rx="12" fill="url(#accentSoft)" />
+    <rect x="348" y="226" width="44" height="152" rx="12" fill="url(#accentSoft)" />
+
+    <path
+      d="M136 280 C180 250, 220 260, 260 236 C300 212, 330 220, 370 188"
+      fill="none"
+      stroke="url(#accent)"
+      stroke-width="14"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+    <path
+      d="M370 188 L352 188 L370 170 L388 188 Z"
+      fill="url(#accent)"
+    />
+  </g>
+
+  <!-- Brand text -->
+  <g text-anchor="middle">
+    <text
+      x="256"
+      y="172"
+      font-size="92"
+      font-weight="800"
+      letter-spacing="2"
+      fill="#e7f0ea"
+      font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial"
+    >
+      HS
+    </text>
+    <text
+      x="256"
+      y="214"
+      font-size="24"
+      font-weight="750"
+      letter-spacing="6"
+      fill="#a8b8af"
+      font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial"
+    >
+      EKONOMI
+    </text>
+  </g>
 </svg>
 
 
