@@ -1,0 +1,24 @@
+:root {
+  /* Base palette: matte green + dark gray */
+  --bg: #0b0f0d;
+  --surface: #111715;
+  --surface-2: #151e1a;
+  --border: #22312a;
+
+  --text: #e7f0ea;
+  --muted: #a8b8af;
+
+  --accent: #2b7a4b;
+  --accent-2: #1f5f3c;
+
+  --danger: #b54a4a;
+  --warning: #b88a3a;
+
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+  --radius: 14px;
+  --radius-lg: 18px;
+
+  color-scheme: dark;
+}
+
+

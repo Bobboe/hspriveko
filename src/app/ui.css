@@ -1,0 +1,192 @@
+.card {
+  background: color-mix(in srgb, var(--surface) 92%, black);
+  border: 1px solid color-mix(in srgb, var(--border) 85%, black);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+}
+
+.cardPad {
+  padding: 14px;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.rowBetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.btn {
+  appearance: none;
+  border: 1px solid color-mix(in srgb, var(--border) 85%, black);
+  background: color-mix(in srgb, var(--surface-2) 80%, black);
+  color: var(--text);
+  border-radius: 12px;
+  padding: 10px 12px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.btnPrimary {
+  border-color: color-mix(in srgb, var(--accent) 60%, var(--border));
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+}
+
+.btnDanger {
+  border-color: color-mix(in srgb, var(--danger) 55%, var(--border));
+  background: color-mix(in srgb, var(--danger) 22%, var(--surface-2));
+}
+
+.input,
+.select {
+  width: 100%;
+  border: 1px solid color-mix(in srgb, var(--border) 85%, black);
+  background: color-mix(in srgb, var(--surface-2) 80%, black);
+  color: var(--text);
+  border-radius: 12px;
+  padding: 10px 12px;
+  font-size: 14px;
+}
+
+.label {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.divider {
+  height: 1px;
+  background: color-mix(in srgb, var(--border) 65%, black);
+}
+
+.chip {
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid color-mix(in srgb, var(--border) 85%, black);
+  background: color-mix(in srgb, var(--surface-2) 75%, black);
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.progressWrap {
+  height: 10px;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--surface-2) 70%, black);
+  border: 1px solid color-mix(in srgb, var(--border) 70%, black);
+  overflow: hidden;
+}
+
+.progressBar {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+}
+
+.progressBarOver {
+  height: 100%;
+  background: linear-gradient(90deg, color-mix(in srgb, var(--danger) 65%, black), var(--danger));
+}
+
+/* Top and bottom navigation */
+.topBar {
+  padding: 10px 4px 12px;
+}
+
+.bottomNav {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-bottom: env(safe-area-inset-bottom);
+  background: color-mix(in srgb, var(--bg) 70%, black);
+  border-top: 1px solid color-mix(in srgb, var(--border) 70%, black);
+  backdrop-filter: blur(10px);
+}
+
+.bottomNavInner {
+  max-width: 680px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  gap: 8px;
+  padding: 10px 12px;
+}
+
+.navItem {
+  flex: 1;
+  text-align: center;
+  padding: 10px 10px;
+  border-radius: 12px;
+  color: var(--muted);
+  font-weight: 650;
+  font-size: 13px;
+  border: 1px solid transparent;
+}
+
+.navItemActive {
+  color: var(--text);
+  border-color: color-mix(in srgb, var(--accent) 45%, var(--border));
+  background: color-mix(in srgb, var(--accent) 12%, var(--surface-2));
+}
+
+/* Modal */
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.62);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 12px;
+  padding-bottom: calc(12px + env(safe-area-inset-bottom));
+}
+
+.modalSheet {
+  width: min(680px, 100%);
+  border-radius: 18px;
+  border: 1px solid color-mix(in srgb, var(--border) 85%, black);
+  background: color-mix(in srgb, var(--surface) 92%, black);
+  box-shadow: var(--shadow);
+  padding: 14px;
+}
+
+.notice {
+  border-radius: 14px;
+  padding: 10px 12px;
+  border: 1px solid color-mix(in srgb, var(--border) 85%, black);
+  background: color-mix(in srgb, var(--surface-2) 85%, black);
+  font-size: 13px;
+}
+
+.noticeError {
+  border-color: color-mix(in srgb, var(--danger) 55%, var(--border));
+  background: color-mix(in srgb, var(--danger) 18%, var(--surface-2));
+}
+
+.noticeSuccess {
+  border-color: color-mix(in srgb, var(--accent) 55%, var(--border));
+  background: color-mix(in srgb, var(--accent) 14%, var(--surface-2));
+}
+
+.smallBtn {
+  padding: 8px 10px;
+  font-size: 13px;
+}
+
+
