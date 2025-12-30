@@ -33,3 +33,19 @@ npm run dev
 
 - Kategorier och utgifter lagras i IndexedDB i din webbläsarprofil på iPhone.
 - Om du rensar Safari-data eller tar bort webbappen kan datan försvinna.
+
+### Deploy via GitHub Pages (rekommenderat)
+
+Projektet är förberett för GitHub Pages, inklusive automatisk deploy med GitHub Actions.
+
+1. Skapa ett repo på GitHub (t.ex. `hspriveko`).
+2. Lägg till remote och pusha:
+   - `git remote add origin https://github.com/<ditt_namn>/<ditt_repo>.git`
+   - `git push -u origin main`
+3. Gå till repo → **Settings → Pages**
+   - Under **Build and deployment**: välj **Source = GitHub Actions**
+4. Vänta tills workflowet “Deploy to GitHub Pages” är grönt.
+5. Appen kommer ligga på:
+   - `https://<ditt_namn>.github.io/<ditt_repo>/`
+
+Obs: Routing är konfigurerad för GitHub Pages via hash-URLs (t.ex. `/#/expenses`) så att refresh och direktlänkar fungerar.
